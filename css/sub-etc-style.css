@@ -1,0 +1,59 @@
+.control span {
+	color: #007AFF;
+}
+
+.control-etc {
+	position: absolute;
+	width: 100%;
+}
+
+.control-etc p {
+	margin-top: 0.8em;
+	width: 10%;
+	float: left;
+}
+
+.control-etc select {
+	width: 30%;
+	float: left;
+	padding: 0.2em 0;
+	margin-left: 0.5em;
+	margin-top: 0.6em;
+}
+
+.control-etc input {
+	width: 30%;
+	float: left;
+	height: 1em;
+	margin-left: 0.5em;
+	margin-top: 0.8em;
+}
+
+.control-etc button {
+	width: 20%;
+	float: left;
+	height: 1.9em;
+	text-align: center;
+	font-size: 12px;
+	padding: 2px;
+	margin-left: 0.5em;
+	margin-top: 0.9em;
+}
+
+#popover3 {
+	height: 280px;
+}
+
+#popover3 {
+	height: 280px;
+}
+
+.popover2-button-cancel {
+	top: 10px;
+}
+
+.popover3 button {
+	width: 35%;
+	float: left;
+	margin-left: 10%;
+}
