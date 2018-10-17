@@ -1,0 +1,49 @@
+body{
+	background: #E0E0E0;
+}
+
+div {
+	display: block;
+}
+
+li {
+	font-size: 14px;
+}
+
+.mui-bar-nav {
+	background: #007AFF;
+}
+
+.mui-bar-nav h1 {
+	color: white;
+}
+
+.mui-table-view {
+	position: absolute;
+	float: left;
+}
+
+.mui-table-view-cell {
+	padding: 10px 8px;
+}
+
+.mui-table-view-cell:after {
+	left: 0px;
+}
+
+.control {
+	padding: 10px;
+}
+
+.control-div {
+	float: left;
+}
+
+.control-img {
+	width: 100%;
+}
+
+.control-p {
+	text-align: center;
+	margin-top: 5px;
+}

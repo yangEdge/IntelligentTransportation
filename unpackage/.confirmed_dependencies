@@ -1,0 +1,71 @@
+{
+	"help.html": {
+		"href": "help.html",
+		"resources": [
+			"css/mui.min.css",
+			"js/mui.min.js"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"home.html": {
+		"href": "home.html",
+		"resources": [
+			"css/mui.min.css",
+			"img/bg.png",
+			"js/mui.min.js"
+		],
+		"refer": [
+			"html/car.html",
+			"html/streetlight.html",
+			"html/ect.html",
+			"html/parking-lot.html",
+			"html/bus.html",
+			"html/environment.html",
+			"html/traffic-light.html",
+			"html/etc.html"
+		],
+		"priority": 0
+	},
+	"gear.html": {
+		"href": "gear.html",
+		"resources": [
+			"css/mui.min.css",
+			"js/mui.min.js"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"index.html": {
+		"href": "index.html",
+		"resources": [
+			"css/mui.min.css",
+			"js/mui.min.js",
+			"home.html"
+		],
+		"refer": [
+			"help.html",
+			"home.html",
+			"gear.html"
+		],
+		"priority": 0
+	},
+	"login.html": {
+		"href": "login.html",
+		"resources": [
+			"css/mui.min.css",
+			"img/loading.jpg",
+			"js/mui.min.js"
+		],
+		"refer": [
+			"index.html"
+		],
+		"priority": 0
+	},
+	"html/car.html": {
+		"refer": [
+			"html/vehicleRecord.html",
+			"html/vehicle-record.html"
+		]
+	}
+}

@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style type="text/css">
+			.bg {
+				position: relative;
+				width: 100%;
+				background-image: url(img/bg.png);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				float: left;
+			}
+			
+			span {
+				float: left;
+			}
+			
+			.table {
+				position: relative;
+				width: 100%;
+				height: 280px;
+				float: left;
+				background: url(img/bg.png);
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+			
+			.mui-table-view {
+				position: absolute;
+				bottom: 0;
+			}
+			
+			.control {
+				background: white;
+				position: relative;
+				width: 100%;
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="table">
+			<ul class="mui-table-view mui-col-sm-12 mui-col-xs-12">
+				<li class="mui-table-view-cell">
+					<span class="mui-col-sm-4 mui-col-xs-4">道路状况：</span>
+					<span class="mui-col-sm-2 mui-col-xs-2">
+						0
+					</span>
+					<span class="mui-col-sm-4 mui-col-xs-4">空闲车位：</span>
+					<span class="mui-col-sm-2 mui-col-xs-2">
+						0
+					</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="mui-col-sm-4 mui-col-xs-4">公交车数量：</span>
+					<span class="mui-col-sm-2 mui-col-xs-2">
+						0
+					</span>
+					<span class="mui-col-sm-4 mui-col-xs-4">停车费率：</span>
+					<span class="mui-col-sm-2 mui-col-xs-2">
+						0
+					</span>
+				</li>
+				<li class="mui-table-view-cell">
+					<span class="mui-col-sm-4 mui-col-xs-4">ECT当前费率：</span>
+					<span class="mui-col-sm-2 mui-col-xs-2">
+						0
+					</span>
+					<span class="mui-col-sm-4 mui-col-xs-4">路灯状况：</span>
+					<span class="mui-col-sm-2 mui-col-xs-2">
+						close
+					</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="control">
+			<div id="0" class="control-div col-xs-3 col-md-3 control-ect">
+				<img class="control-img" src="img/setc.png" />
+				<p class="control-p">
+					ETC
+				</p>
+			</div>
+			<div id="1" class="control-div col-xs-3 col-md-3 control-parking-lot">
+				<img class="control-img" src="img/tingchechang.png" />
+				<p class="control-p">
+					停车厂
+				</p>
+			</div>
+			<div id="2" class="control-div col-xs-3 col-md-3 control-car">
+				<img class="control-img" src="img/xiaoche.png" />
+				<p class="control-p">
+					小车
+				</p>
+			</div>
+			<div id="3" class="control-div col-xs-3 col-md-3 control-bus">
+				<img class="control-img" src="img/bus.png" />
+				<p class="control-p">
+					公交
+				</p>
+			</div>
+			<div id="4" class="control-div col-xs-3 col-md-3 control-environment">
+				<img class="control-img" src="img/huanjing.png" />
+				<p class="control-p">
+					环境
+				</p>
+			</div>
+			<div id="5" class="control-div col-xs-3 col-md-3 control-traffic-light">
+				<img class="control-img" src="img/hongludeng.png" />
+				<p class="control-p">
+					红绿灯
+				</p>
+			</div>
+			<div id="6" class="control-div col-xs-3 col-md-3 control-streetlight">
+				<img class="control-img" src="img/ludeng.png" />
+				<p class="control-p">
+					路灯
+				</p>
+			</div>
+
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+
+			mui.init({
+				preloadPages: [{
+					url: 'html/etc.html',
+					id: 'etc.html'
+				}, {
+					url: 'html/parking-lot.html',
+					id: 'parking-lot.html'
+				}, {
+					url: 'html/car.html',
+					id: 'car.html'
+				}, {
+					url: 'html/bus.html',
+					id: 'bus.html'
+				}, {
+					url: 'html/environment.html',
+					id: 'environment.html'
+				}, {
+					url: 'html/traffic-light.html',
+					id: 'traffic-light.html'
+				}, {
+					url: 'html/streetlight.html',
+					id: 'streetlight.html'
+				}]
+			});
+			
+			mui.plusReady(function() {
+
+				mui('.control').on('tap', '.control-div', function() {
+					var id = this.getAttribute('id');
+					btn(id);
+				});
+
+				function btn(type) {
+					switch(type) {
+						case "0":
+							mui.openWindow('html/etc.html', 'etc.html', {});
+							break;
+						case "1":
+							mui.openWindow('html/parking-lot.html', 'parking-lot.html', {});
+							break;
+						case "2":
+							mui.openWindow('html/car.html', 'car.html', {});
+							break;
+						case "3":
+							mui.openWindow('html/bus.html', 'bus.html', {});
+							break;
+						case "4":
+							mui.openWindow('html/environment.html', 'environment.html', {});
+							break;
+						case "5":
+							mui.openWindow('html/traffic-light.html', 'traffic-light.html', {});
+							break;
+						case "6":
+							mui.openWindow('html/streetlight.html', 'streetlight.html', {});
+							break;
+						default:
+							break;
+
+					}
+				}
+
+			});
+		</script>
+	</body>
+
+</html>

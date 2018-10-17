@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.bg {
+				background-image: url(img/loading.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+
+	<body class="bg">
+
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+
+			mui.plusReady(function() {
+				mui.preload({
+					url: 'index.html',
+					id: 'index.html',
+					styles: {}, //窗口参数
+					extras: {} //自定义扩展参数
+				});
+				mui.prompt('', '请输入设备上显示的IP地址', '欢迎您，请设置服务器IP', ['确认'], function(e) {
+					e.index;
+					mui.openWindow('index.html', 'index.html', {})
+				}, 'div');
+			});
+		</script>
+	</body>
+
+</html>

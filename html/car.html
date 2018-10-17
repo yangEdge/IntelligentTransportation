@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/sub-style.css" />
+		<style type="text/css">
+			#popover1 {
+				height: 150px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">小车</h1>
+		</header>
+
+		<div class="control">
+			<ul class="mui-table-view">
+				<li id="0" class="mui-table-view-cell">
+					<a href="#popover0" class="mui-navigate-right">
+						小车当前速度
+					</a>
+				</li>
+				<li id="1" class="mui-table-view-cell">
+					<a href="#popover1" class="mui-navigate-right">
+						小车当前位置
+					</a>
+				</li>
+				<li id="2" class="mui-table-view-cell">
+					<a href="#popover2" class="mui-navigate-right">
+						小车当前余额
+					</a>
+				</li>
+				<li id="3" class="mui-table-view-cell">
+					<a href="#popover3" class="mui-navigate-right">
+						设置小车动作
+					</a>
+				</li>
+				<li id="4" class="mui-table-view-cell">
+					<a id="vehicle-record" class="mui-navigate-right">
+						小车记录
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="popover0" class="mui-popover">
+			<div class="mui-scroll">
+				<p class="popover-title">小车速度</p>
+				<div class="popover0">
+					<select class="mui-btn mui-btn-block popover0-select">
+						<option value="item-1">1号小车</option>
+						<option value="item-2">2号小车</option>
+						<option value="item-3">3号小车</option>
+						<option value="item-4">4号小车</option>
+					</select>
+
+					<button type="button" class="mui-btn mui-btn-grey popover0-button">查询</button>
+
+					<p><span></span>当前速度：<span>close</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popover1" class="mui-popover">
+			<div class="mui-scroll">
+				<p class="popover-title">小车位置</p>
+				<div class="popover0">
+					<select class="mui-btn mui-btn-block popover0-select">
+						<option value="item-1">1号小车</option>
+						<option value="item-2">2号小车</option>
+						<option value="item-3">3号小车</option>
+						<option value="item-4">4号小车</option>
+					</select>
+
+					<button type="button" class="mui-btn mui-btn-grey popover0-button">查询</button>
+
+					<p><span></span>当前位置：<span>close</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popover2" class="mui-popover">
+			<div class="mui-scroll">
+				<p class="popover-title">小车位置</p>
+				<div class="popover0">
+					<select class="mui-btn mui-btn-block popover0-select">
+						<option value="item-1">1号小车</option>
+						<option value="item-2">2号小车</option>
+						<option value="item-3">3号小车</option>
+						<option value="item-4">4号小车</option>
+					</select>
+
+					<button type="button" class="mui-btn mui-btn-grey popover0-button">查询</button>
+
+					<div class="balance">
+						<p>100元</p>
+					</div>
+
+					<button type="button" class="mui-btn mui-btn-grey popover2-button-set">充值</button>
+
+					<input type="text" class="mui-input-clear" placeholder="">
+
+					<button type="button" class="mui-btn mui-btn-grey popover2-button-set">提交</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="popover3" class="mui-popover">
+			<div class="mui-scroll">
+				<p class="popover-title">设置小车动作</p>
+				<div class="popover3">
+					<select class="mui-btn mui-btn-block popover3-select">
+						<option value="item-1">1号小车</option>
+						<option value="item-2">2号小车</option>
+						<option value="item-3">3号小车</option>
+						<option value="item-4">4号小车</option>
+					</select>
+
+					<button type="button" class="mui-btn mui-btn-grey popover3-button">查询</button>
+
+					<div class="mui-input-row">
+						<label>启停</label>
+						<div class="mui-switch mui-active mui-switch-blue">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</div>
+
+					<button type="button" class="mui-btn mui-btn-grey popover1-button-set">设置</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="popover4" class="mui-popover">
+			<div class="mui-scroll">
+
+			</div>
+		</div>
+
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+
+			mui.plusReady(function() {
+				mui.preload({
+					url: 'vehicle-record.html',
+					id: 'vehicle-record.html',
+					styles: {}, //窗口参数
+					extras: {} //自定义扩展参数
+				});
+
+				$("#vehicle-record").click(function() {
+					mui.openWindow('vehicle-record.html', 'vehicle-record.html', {});
+				});
+			});
+		</script>
+	</body>
+
+</html>

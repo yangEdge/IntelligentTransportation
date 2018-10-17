@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/sub-style.css" />
+		<style type="text/css">
+			.control span {
+				color: #007AFF;
+			}
+			
+			.control-etc {
+				position: absolute;
+				width: 100%;
+			}
+			
+			.control-etc p {
+				margin-top: 0.8em;
+				width: 10%;
+				float: left;
+			}
+			
+			.control-etc select {
+				width: 30%;
+				float: left;
+				padding: 0.2em 0;
+				margin-left: 0.5em;
+				margin-top: 0.6em;
+			}
+			
+			.control-etc input {
+				width: 30%;
+				float: left;
+				height: 1em;
+				margin-left: 0.5em;
+				margin-top: 0.8em;
+			}
+			
+			.control-etc button {
+				width: 20%;
+				float: left;
+				height: 1.9em;
+				text-align: center;
+				font-size: 12px;
+				padding: 2px;
+				margin-left: 0.5em;
+				margin-top: 0.9em;
+			}
+			
+			#popover3 {
+				height: 280px;
+			}
+			
+			#popover3 {
+				height: 280px;
+			}
+			
+			.popover2-button-cancel {
+				top: 10px;
+			}
+			
+			.popover3 button {
+				width: 35%;
+				float: left;
+				margin-left: 10%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">ETC</h1>
+		</header>
+
+		<div class="control">
+			<p>当前ECT费率为<span>0</span>/小时</p>
+
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right">
+						<img src="../img/feilv.png"> ETC费率设置
+						<div class="mui-collapse-content control-etc">
+							<p>费率：</p>
+							<select name="mui-btn mui-btn-block">
+								<option value="item-1">小时</option>
+								<option value="item-2">分</option>
+								<option value="item-3">秒</option>
+							</select>
+							<input type="text" placeholder="费率">
+
+							<button type="button" class="mui-btn mui-btn-outlined">设置</button>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#popover3" class="mui-navigate-right">
+						<img src="../img/heimingdan.png"> 黑名单设置
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<img src="../img/xingxichaxun.png"> ETC信息查询
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div id="popover3" class="mui-popover">
+			<div class="mui-scroll">
+				<p class="popover-title">黑名单下发</p>
+				<div class="popover3">
+					<div class="">
+						<div class="mui-input-row mui-radio mui-left">
+							<label>1号小车</label>
+							<input name="radio" type="radio">
+						</div>
+						<div class="mui-input-row mui-radio mui-left">
+							<label>2号小车</label>
+							<input name="radio" type="radio">
+						</div>
+						<div class="mui-input-row mui-radio mui-left">
+							<label>3号小车</label>
+							<input name="radio" type="radio">
+						</div>
+						<div class="mui-input-row mui-radio mui-left">
+							<label>4号小车</label>
+							<input name="radio" type="radio">
+						</div>
+					</div>
+					<p class="popover-title" style="margin-top: -1em;"></p>
+					<button type="button" class="mui-btn mui-btn-grey popover2-button-cancel">取消</button>
+					<button type="button" class="mui-btn mui-btn-grey popover2-button-set">确认</button>
+
+				</div>
+
+			</div>
+		</div>
+
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,207 @@
+header>a {
+	color: white;
+}
+
+select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 1px solid #000000;
+	background: url(../img/arrow.png) no-repeat scroll right center transparent;
+	padding-right: 14px;
+}
+
+img{
+	width: 1.5em;
+	margin-right: 10px;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.control {
+	position: absolute;
+	float: left;
+	width: 100%;
+	top: 45px;
+}
+
+.mui-table-view {
+	width: 100%;
+	padding: 10px;
+	margin-left: -10px;
+}
+
+.mui-popover {
+	position: absolute;
+	background: white;
+}
+
+#popover0 {
+	height: 150px;
+	width: 250px;
+	margin-top: 100px;
+}
+
+.popover0 {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+}
+
+.popover0-select {
+	width: 60%;
+	float: left;
+	margin-left: 10px;
+}
+
+.popover0-button {
+	width: 25%;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.popover0 p {
+	float: left;
+	margin-left: 10px;
+}
+
+.popover0 input {
+	width: 60%;
+	float: left;
+	margin-left: 10px;
+}
+
+#popover1 {
+	height: 230px;
+	width: 250px;
+	margin-top: 60px;
+}
+
+.popover1 {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+}
+
+.popover1-select {
+	width: 90%;
+	float: left;
+	margin-left: 10px;
+}
+
+.popover1 label {
+	margin-left: 10px;
+}
+
+.popover1 button {
+	width: 35%;
+	float: left;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+
+.popover1-button1 {
+	background: #007AFF;
+}
+
+.popover1-button-set {
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 30%;
+	background: #007AFF;
+}
+
+#popover2 {
+	height: 200px;
+	width: 270px;
+	margin-top: 20px;
+}
+
+.popover2 {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+}
+
+.popover2-radio {
+	width: 90%;
+	height: 50px;
+	float: left;
+	margin-top: 10px;
+}
+
+.popover2-radio>div {
+	position: absolute;
+	width: 40%;
+	float: left;
+}
+
+#radio2 {
+	margin-left: 45%;
+}
+
+.balance {
+	width: 60%;
+	float: left;
+	margin-left: 10px;
+}
+
+.balance p {
+	color: #FF8300;
+}
+
+.popover2 button {
+	width: 35%;
+	float: left;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+
+.popover2-button1 {
+	background: #007AFF;
+}
+
+.popover2-button-set {
+	width: 25%;
+	margin-left: 10px;
+	margin-top: 10px;
+	background: #007AFF;
+}
+
+#popover3 {
+	height: 230px;
+	width: 250px;
+	margin-top: -60px;
+}
+
+.popover3 {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+}
+
+.popover3-select {
+	width: 60%;
+	float: left;
+	margin-left: 10px;
+}
+
+.popover3-button {
+	width: 25%;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.mui-popover .mui-popover-arrow:after {
+	width: 0px;
+}
+
+.popover-title {
+	background: white;
+	margin-top: 10px;
+	text-align: center;
+}
